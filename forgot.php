@@ -1,44 +1,51 @@
 <?php
-// DATABASE CONNECTION
 $conn = new mysqli("localhost", "root", "", "e_commerce");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
 $message = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST['email']);
-    $password = $_POST['password'];
 
-    $stmt = $conn->prepare("SELECT password FROM account WHERE email = ?");
+    // Check if email exists
+    $stmt = $conn->prepare("SELECT id FROM account WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
 
     if ($stmt->num_rows == 1) {
-        $stmt->bind_result($hashedPassword);
-        $stmt->fetch();
-        if (password_verify($password, $hashedPassword)) {
-            $message = "<p class='success'>Login successful. Welcome!</p>";
-            // You can redirect or start session here
+        // Generate reset token & expiry (1 hour)
+        $token = bin2hex(random_bytes(16));
+        $expires = date("Y-m-d H:i:s", strtotime("+1 hour"));
+
+        // Save to DB
+        $stmt->close();
+        $update = $conn->prepare("UPDATE users SET reset_token = ?, reset_expires = ? WHERE email = ?");
+        $update->bind_param("sss", $token, $expires, $email);
+        if ($update->execute()) {
+            // In real app: send email with this link
+            $resetLink = "http://{$_SERVER['HTTP_HOST']}/reset_password.php?token=$token";
+            $message = "<p class='success'>Reset link generated!<br>Click here to reset your password:<br><a href='$resetLink'>$resetLink</a></p>";
         } else {
-            $message = "<p class='error'>Invalid password.</p>";
+            $message = "<p class='error'>Failed to save reset token.</p>";
         }
+        $update->close();
     } else {
-        $message = "<p class='error'>No account with that email.</p>";
+        $message = "<p class='error'>Email not found.</p>";
     }
     $stmt->close();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
+    <meta charset="UTF-8" />
+    <title>Forget Password</title>
     <style>
         body {
             font-family: sans-serif;
-            background: #e0e0e0;
+            background: #f3f4f6;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         button {
             width: 100%;
-            background: #2196F3;
+            background: #ff5722;
             color: white;
             border: none;
             padding: 10px;
@@ -69,27 +76,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             border-radius: 6px;
             cursor: pointer;
         }
-        .success { color: green; text-align: center; }
+        .success { color: green; text-align: center; word-break: break-all; }
         .error { color: red; text-align: center; }
         .link { text-align: center; margin-top: 10px; }
     </style>
 </head>
 <body>
 <div class="form-box">
-    <h2>Login</h2>
+    <h2>Forgot Password</h2>
     <?php echo $message; ?>
     <form method="post">
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="password" name="password" placeholder="Password" required />
-        <button type="submit">Login</button>
+        <input type="email" name="email" placeholder="Enter your registered email" required />
+        <button type="submit">Send Reset Link</button>
     </form>
     <div class="link">
-        Don't have an account? <a href="register.php">Register</a>
+        Remember password? <a href="login.php">Login here</a>
     </div>
-    <div class="link">
-    <a href="forgot.php">Forgot Password?</a><br></a>
-</div>
-
 </div>
 </body>
 </html>
