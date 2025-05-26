@@ -309,7 +309,7 @@
                                     <p class="product-p">Original package design from house</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$25</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦1000</small>
                             </div>
                         </div>
                     </div>
@@ -335,7 +335,7 @@
                                     <p class="product-p">Costume Package</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$35</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦3500</small>
                             </div>
                         </div>
                     </div>
@@ -359,7 +359,7 @@
                                     <p class="product-p">Nature made another world</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$45</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦4500</small>
                             </div>
                         </div>
                     </div>
