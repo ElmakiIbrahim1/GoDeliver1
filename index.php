@@ -164,7 +164,7 @@
 
                                             <p>GoDeliver comes with product listing, product detail, about, Category, and contact page.</p>
 
-                                            <p>Since the beginning of this year we have sold over 600, 000 items. GoDeliver is one the best and renowned e-commerce website in the globe.</p>
+                                            <p>Since the beginning of this year we have sold over 800, 000 items. GoDeliver is one the best and renowned e-commerce website in the globe.</p>
 
                                             <div class="mt-2 mt-lg-auto">
                                                 <a href="about.php" class="custom-link mb-2">
