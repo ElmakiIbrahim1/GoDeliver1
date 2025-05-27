@@ -286,7 +286,6 @@
                         <li class="me-3"><strong>Where to find?</strong></li>
 
                         <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-
                         <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
 
                         <li><a href="#" class="social-icon-link bi-instagram"></a></li>
@@ -298,11 +297,11 @@
     </div>
 
     <!-- TEAM MEMBER MODAL -->
-    <div class="modal fade" id="kelly" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="abdulmumin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content border-0">
                 <div class="modal-header flex-column">
-                    <h3 class="modal-title" id="exampleModalLabel">Kelly Lisa</h3>
+                    <h3 class="modal-title" id="exampleModalLabel">abdulmumin Lisa</h3>
 
                     <h6 class="text-muted">Global, Head of Marketing</h6>
 
