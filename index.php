@@ -313,7 +313,7 @@
                                     <p class="product-p">Original package design from house</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$25</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦25</small>
                             </div>
                         </div>
                     </div>
@@ -339,7 +339,7 @@
                                     <p class="product-p">Costume Package</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$35</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦35</small>
                             </div>
                         </div>
                     </div>
