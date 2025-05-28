@@ -66,6 +66,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="about.php">About</a>
                     </li>
+                    <li class="nav-item">
+                            <a class="nav-link " href="register.php">Account</a>
+                        </li>
                 </ul>
 
                 <div class="d-none d-lg-block">

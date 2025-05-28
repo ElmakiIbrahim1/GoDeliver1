@@ -58,6 +58,10 @@
                         <li class="nav-item">
                             <a class="nav-link " href="about.php">About</a>
                         </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link " href="register.php">Account</a>
+                        </li>
                     </ul>
 
                     <div class="d-none d-lg-block">
@@ -164,7 +168,7 @@
 
                                             <p>GoDeliver comes with product listing, product detail, about, Category, and contact page.</p>
 
-                                            <p>Since the beginning of this year we have sold over 600, 000 items. GoDeliver is one the best and renowned e-commerce website in the globe.</p>
+                                            <p>Since the beginning of this year we have sold over 800, 000 items. GoDeliver is one the best and renowned e-commerce website in the globe.</p>
 
                                             <div class="mt-2 mt-lg-auto">
                                                 <a href="about.php" class="custom-link mb-2">
@@ -309,7 +313,7 @@
                                     <p class="product-p">Original package design from house</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$25</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦25</small>
                             </div>
                         </div>
                     </div>
@@ -335,7 +339,7 @@
                                     <p class="product-p">Costume Package</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$35</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦35</small>
                             </div>
                         </div>
                     </div>
