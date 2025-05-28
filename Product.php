@@ -208,7 +208,7 @@ mysqli_close($conn);
 
                         <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
 
-                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+                        <li><a href="instagram" class="social-icon-link bi-instagram"></a></li>
 
                         <li><a href="facebook" class="social-icon-link bi-skype"></a></li>
                     </ul>
