@@ -1,9 +1,6 @@
 <?php
 // DATABASE CONNECTION
-$conn = new mysqli("localhost", "root", "", "e_commerce");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require __DIR__ . '/includes/connections.php';
 
 $message = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
