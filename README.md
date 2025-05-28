@@ -1,3 +1,4 @@
+
 # 🛒 GoDeliver
 
 A fully functional and responsive eCommerce web application built with **PHP**, **MySQL**, **HTML5**, **CSS3**, and **JavaScript**. This project provides a basic platform for buying and selling products online, including features such as user authentication, product catalog, shopping cart, and admin panel for inventory management.
@@ -32,6 +33,3 @@ A fully functional and responsive eCommerce web application built with **PHP**, 
 - **Other Tools:** phpMyAdmin, XAMPP/WAMP for local server
 
 ## 📁 Project Structure
-
-
-

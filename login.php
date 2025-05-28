@@ -1,16 +1,21 @@
 <?php
-// DATABASE CONNECTION
 $conn = new mysqli("localhost", "root", "", "e_commerce");
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
 $message = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST['email']);
     $password = $_POST['password'];
 
     $stmt = $conn->prepare("SELECT password FROM account WHERE email = ?");
+    if (!$stmt) {
+        die("Prepare failed: " . $conn->error);
+    }
+
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
@@ -29,6 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     $stmt->close();
 }
+
+$conn->close();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 30px;
             border-radius: 8px;
             width: 350px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(56, 34, 34, 0.1);
         }
         h2 { text-align: center; margin-bottom: 20px; }
         input {
@@ -61,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         button {
             width: 100%;
-            background: #2196F3;
+            background:rgb(235, 158, 17);
             color: white;
             border: none;
             padding: 10px;
