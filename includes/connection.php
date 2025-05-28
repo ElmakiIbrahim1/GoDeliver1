@@ -7,7 +7,11 @@ $db = 'e_commerce';
 
     $conn = new mysqli($server, $user, $pswd, $db);
 
-    if($conn){
-        // echo "Successful";
-    }
+  try {
+      if(!$conn){
+          die('Connection Failed');
+      }
+  } catch (\Throwable $th) {
+      throw $th;
+  }
 ?>
