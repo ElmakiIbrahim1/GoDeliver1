@@ -57,7 +57,7 @@ $conn->close();
             padding: 30px;
             border-radius: 8px;
             width: 350px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(56, 34, 34, 0.1);
         }
         h2 { text-align: center; margin-bottom: 20px; }
         input {
@@ -69,7 +69,7 @@ $conn->close();
         }
         button {
             width: 100%;
-            background: #2196F3;
+            background:rgb(235, 158, 17);
             color: white;
             border: none;
             padding: 10px;
