@@ -313,33 +313,6 @@
                                     <p class="product-p">Original package design from house</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦25</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-12 mb-3">
-                        <div class="product-thumb">
-                            <a href="cart.php">
-                                <img src="images/product/jordan-nix-CkCUvwMXAac-unsplash.jpeg" class="img-fluid product-image" alt="">
-                            </a>
-
-                            <div class="product-top d-flex">
-                                <span class="product-alert">Low Price</span>
-
-                                <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
-                            </div>
-
-                            <div class="product-info d-flex">
-                                <div>
-                                    <h5 class="product-title mb-0">
-                                        <a href="cart.php" class="product-title-link">Fashion Set</a>
-                                    </h5>
-
-                                    <p class="product-p">Costume Package</p>
-                                </div>
-
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦35</small>
                             </div>
                         </div>
                     </div>
@@ -363,7 +336,7 @@
                                     <p class="product-p">Nature made another world</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$45</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">₦4500</small>
                             </div>
                         </div>
                     </div>
