@@ -1,10 +1,10 @@
 :root {
-    --white-color:#FFFFFF;
-  --primary-color:#FF4400;
-  --section-bg-color:#f0f8ff;
+    --white-color:#ffffff;
+  --primary-color:#088c9b;
+  --section-bg-color:#fff0f0;
   --dark-color:#000000;
-  --grey-color:#d0d1d1;
-  --p-color: #717275;
+  --grey-color:#d0d1d0;
+  --p-color: #717573;
 }
 @font-face {
     font-family: Proxima;
@@ -14,13 +14,13 @@
     font-family: Proxima;
 }
 body {
-    background-color: #f5f2f0;
+    background-color: #f0f5f3;
 }
 .sidebar {
     position: fixed;
     background-color: #fafafa;
     padding: 15px;
-    z-index: 1;
+    z-index: 25;
     left: 0;    
     top: 85px;
     height: 100%;
@@ -56,7 +56,7 @@ body {
     margin-left: 15px;
 }
 .sidebar-icons:hover {
-    background-color: #FF4400;
+    background-color: #0095ff;
     border-radius: 5px;
 }
 .sidebar-icons a:hover {
@@ -65,7 +65,7 @@ body {
 
 .active-sidebar {
     display: none;
-    color: white;
+    color: red;
 }
 .categories-section {
     background-color: #fafafa;
