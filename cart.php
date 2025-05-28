@@ -187,7 +187,7 @@ $result = mysqli_query($conn, $sql);
                                     <p class="product-p">Original package design from house</p>
                                 </div>
 
-                                <small class="product-price text-muted ms-auto mt-auto mb-5">$25</small>
+                                <small class="product-price text-muted ms-auto mt-auto mb-5">N25</small>
                             </div>
                         </div>
                     </div>

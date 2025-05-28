@@ -297,11 +297,8 @@
     </div>
 
     <!-- TEAM MEMBER MODAL -->
-    <div class="modal fade" id="abdulmumin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content border-0">
-                <div class="modal-header flex-column">
-                    <h3 class="modal-title" id="exampleModalLabel">abdulmumin Lisa</h3>
+                    <h3 class="modal-title" id="exampleModalLabel">Abdulmumin</h3>
+  
 
                     <h6 class="text-muted">Global, Head of Marketing</h6>
 
